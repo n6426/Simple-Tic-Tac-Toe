@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="theme-color"
+      content="#0a1020"
+    />
+    <title>Simple Tic Tac Toe</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <main class="app-shell">
+        <section class="hero-card card">
+          <p class="eyebrow">Local multiplayer / TypeScript</p>
+          <h1>Simple Tic Tac Toe</h1>
+          <p class="lede">
+            A responsive two-player board game with clear turn state, win detection,
+            and a finish that feels deliberate instead of default.
+          </p>
+
+          <div class="status-grid" aria-label="Game summary">
+            <article class="status-tile">
+              <span class="tile-label">Current player</span>
+              <strong id="current-player" class="tile-value">X</strong>
+            </article>
+            <article class="status-tile">
+              <span class="tile-label">Game state</span>
+              <strong id="board-state" class="tile-value">In progress</strong>
+            </article>
+            <article class="status-tile">
+              <span class="tile-label">Moves played</span>
+              <strong id="move-count" class="tile-value">0</strong>
+            </article>
+          </div>
+
+          <div class="feature-card">
+            <p class="feature-title">What this version includes</p>
+            <ul class="feature-list">
+              <li>3x3 board with alternating X and O turns</li>
+              <li>Win and draw detection for every line</li>
+              <li>Keyboard-friendly buttons and visible focus states</li>
+              <li>Mobile-first layout with desktop expansion</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="game-card card" aria-labelledby="board-heading">
+          <div class="game-header">
+            <div>
+              <p class="eyebrow">Game board</p>
+              <h2 id="board-heading">Take turns. Win in three.</h2>
+            </div>
+            <button id="restart-button" class="restart-button" type="button">
+              Restart
+            </button>
+          </div>
+
+          <div class="status-banner" aria-live="polite" role="status">
+            <p class="status-label">Status</p>
+            <p id="status-message" class="status-message">
+              X to move. Claim any open square.
+            </p>
+          </div>
+
+          <div
+            id="board"
+            class="board"
+            role="grid"
+            aria-label="Tic Tac Toe board"
+          ></div>
+
+          <p id="board-hint" class="board-hint">
+            Tap a square to play. Winning squares glow and the board locks after the
+            game ends.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
