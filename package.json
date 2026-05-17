@@ -1,0 +1,11 @@
+{
+  "name": "simple-tic-tac-toe",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node --no-warnings scripts/build.mjs",
+    "serve": "node --no-warnings scripts/serve.mjs",
+    "start": "node --no-warnings scripts/serve.mjs"
+  }
+}
