@@ -29,7 +29,7 @@ You need login flows, private API keys, database writes, server-side rendering, 
 
 Vercel also has environment-variable management, analytics, speed insights, and storage/database integrations through its dashboard/marketplace, including Supabase, Neon, Redis, MongoDB Atlas, and others. ([Vercel][4])
 
-My practical recommendation: for a beginner app built with Bolt, VS Code, or Codex, use **GitHub as the code repository** and **Vercel as the deployment/app host**. Add **Supabase** if you need auth, Postgres database, file storage, or row-level security. GitHub Pages is great, but it is the “publish static files” option, not the “host my full app” option.
+My practical recommendation: for a beginner app built with Bolt, VS Code, or Codex, use **GitHub as the code repository** and **Vercel as the deployment/app host**. Add **Supabase** if you need auth, Postgres database, file storage, or row-level security. GitHub Pages is great, but it is the "publish static files" option, not the "host my full app" option.
 
 [1]: https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages?utm_source=chatgpt.com "What is GitHub Pages?"
 [2]: https://vercel.com/docs/functions?utm_source=chatgpt.com "Vercel Functions"
